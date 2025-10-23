@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata Sederhana</title>
+    <title>Form Biodata Sederhana</title>
     <style>
         body {
             font-family: "Poppins", sans-serif;
@@ -16,24 +16,26 @@
             height: 100vh;
         }
 
+        /* wadah utama dua sisi */
         .container {
             display: flex;
-            background: white;
+            background: #fff;
             border-radius: 20px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
             overflow: hidden;
-            width: 850px;
+            width: 900px;
             max-width: 95%;
         }
 
         .gambar {
             flex: 1;
-            background: url('https://cdn.pixabay.com/photo/2017/01/31/17/44/laptop-2025851_960_720.png') center/cover no-repeat;
+            background: url('12063795_4884785-1024x683.webp') center/cover no-repeat;
+            min-height: 500px;
         }
 
         .form-container {
             flex: 1;
-            padding: 30px;
+            padding: 30px 40px;
         }
 
         h2 {
@@ -46,6 +48,7 @@
             display: block;
             margin-top: 10px;
             font-weight: 600;
+            color: #333;
         }
 
         input, select, textarea {
@@ -118,10 +121,12 @@
 <body>
 
 <div class="container">
+    <!-- Sisi kiri: gambar -->
     <div class="gambar"></div>
 
+    <!-- Sisi kanan: form biodata -->
     <div class="form-container">
-        <h2>Form Biodata Sederhana</h2>
+        <h2>Form Biodata</h2>
 
         <form method="POST">
             <label>Nama Lengkap:</label>
